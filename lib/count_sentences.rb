@@ -19,7 +19,8 @@ class String
     self.each_index do |x|
       if self[x] == " "
         self.shift
-      end 
+      end
     end
     self.count
+  end
 end
