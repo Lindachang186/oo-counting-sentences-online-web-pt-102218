@@ -19,6 +19,7 @@ class String
     if self > 0
       self.size
     else
-      return 0 
+      return 0
+    end
   end
 end
