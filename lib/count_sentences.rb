@@ -18,7 +18,7 @@ class String
     new = self.split(/[.?!]/)
     binding.pry
     new.map do |sentence|
-      if sentence == " "
+      if sentence == ""
         sentence.shift()
       end
     end
