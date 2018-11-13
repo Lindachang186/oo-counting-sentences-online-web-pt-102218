@@ -18,7 +18,7 @@ class String
     new = self.split(/[.?!]/)
     new.each do |sentence|
       if sentence == ""
-        sentence.shift
+        sentence.shift()
       end
     end
     new.count
