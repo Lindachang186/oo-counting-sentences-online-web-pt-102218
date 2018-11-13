@@ -16,10 +16,8 @@ class String
 
   def count_sentences
     self.split(/[.?!]/)
-    self.each_index do |x, item|
-      if self[x] == " "
-        self[x].shift()
-      end
+    self.each do |sentence|
+
     end
     self.count
   end
