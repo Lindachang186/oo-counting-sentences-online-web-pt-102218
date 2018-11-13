@@ -15,11 +15,9 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!]/)
+    self.split(/[.?!]/).count
     self.each_index do |item, index|
-    
         binding.pry
-      return self.count
-    end
+      end
     end
 end
