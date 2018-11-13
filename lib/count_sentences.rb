@@ -17,9 +17,9 @@ class String
   def count_sentences
     new = self.split(/[.?!]/)
     new.each do |sentence|
+      binding.pry
       if sentence == " "
         sentence.shift()
-        binding.pry
       end
     end
     new.count
