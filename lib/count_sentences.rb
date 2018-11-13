@@ -21,6 +21,6 @@ class String
         sentence.shift
       end
     end
+    new.count
   end
-  new.count
 end
