@@ -19,7 +19,7 @@ class String
     new.each_with_index.map do |sentence, index|
       binding.pry
       if sentence == " "
-        sentence.shift()
+        sentence[index].shift()
       end
     end
     new.count
