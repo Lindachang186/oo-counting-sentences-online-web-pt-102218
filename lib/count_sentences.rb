@@ -16,6 +16,12 @@ class String
 
   def count_sentences
     binding.pry
-    self.split(/[.?!]/).count
+    self.split(/[.?!]/)
+    self.map do |item|
+      if item.include?(" ")
+        item.shift
+      end
+      return self.count
+    end
     end
 end
