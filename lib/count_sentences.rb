@@ -16,7 +16,7 @@ class String
 
   def count_sentences
     new = self.split(/[.?!]/)
-    new.each_with_index.map do |sentence|
+    new.map do |sentence|
       if sentence == " "
         sentence.shift()
       end
