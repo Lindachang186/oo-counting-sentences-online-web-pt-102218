@@ -15,11 +15,11 @@ class String
   end
 
   def count_sentences
-    binding.pry
     self.split(/[.?!]/)
     self.each_index do |item, index|
       if item.include?(" ")
         item.shift
+        binding.pry
       end
       return self.count
     end
